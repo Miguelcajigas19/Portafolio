@@ -20,4 +20,9 @@ module.exports = {
     extend: {},
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
+
+  scripts: {
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css --watch"
+  }
+  
 };
